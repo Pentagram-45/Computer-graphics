@@ -1,2 +1,0 @@
-# Computer-graphics
-CG stuff

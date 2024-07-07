@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\CG\\Computer-graphics\\learn opengl\\window1\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DDB4D509-C99F-4731-AAD5-647FEAC11649}|window1\\window1.vcxproj|D:\\CG\\Computer-graphics\\learn opengl\\window1\\window1\\1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DDB4D509-C99F-4731-AAD5-647FEAC11649}|window1\\window1.vcxproj|solutionrelative:window1\\1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "1.cpp",
+              "DocumentMoniker": "D:\\CG\\Computer-graphics\\learn opengl\\window1\\window1\\1.cpp",
+              "RelativeDocumentMoniker": "window1\\1.cpp",
+              "ToolTip": "D:\\CG\\Computer-graphics\\learn opengl\\window1\\window1\\1.cpp",
+              "RelativeToolTip": "window1\\1.cpp",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2024-07-07T21:40:23.607Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

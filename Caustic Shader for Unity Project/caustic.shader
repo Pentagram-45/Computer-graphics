@@ -11,7 +11,7 @@ Shader "Custom/caustic"
 
     SubShader
     {
-        Tags {"RenderType"="Opaque"}
+        Tags {"Queue" = "Transparent" "RenderType"="Transparent"}
         LOD 200
 
         Pass
@@ -40,6 +40,7 @@ Shader "Custom/caustic"
             float _CausticStrength;
             float _CausticSpeed;
 
+            //vertex shader
             v2f vert (appdata v)
             {
                 v2f o;
@@ -48,14 +49,19 @@ Shader "Custom/caustic"
                 return o;
             }
 
+            //fragment shader
             fixed4 frag (v2f i) : SV_Target
             {
+                //object base texture
                 fixed4 baseColor = tex2D(_MainTex, i.uv);
 
+                //noise texture for mimicking distortion
                 float2 distortion = tex2D(_NoiseTexture, i.uv * 5.0).rg * 0.1;
 
+                //change caustic texture uv coords
                 float2 caustic_uv = i.uv + distortion + float2(_Time.y * _CausticSpeed, _Time.y * _CausticSpeed * 0.5);
                 fixed4 caustic_tex = tex2D(_CausticTexture, caustic_uv);
+                //change caustic color
                 fixed4 caustic_color = caustic_tex * float4(0.5, 0.7, 1.0, 1.0);
 
                 fixed4 output = baseColor + caustic_color * _CausticStrength;
